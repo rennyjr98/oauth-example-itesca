@@ -1,0 +1,36 @@
+{
+	"ImportPath": "oauth2-example",
+	"GoVersion": "go1.15",
+	"GodepVersion": "v80",
+	"Deps": [
+		{
+			"ImportPath": "cloud.google.com/go/compute/metadata",
+			"Comment": "storage/v1.12.0-4-gc11c74a8a",
+			"Rev": "c11c74a8af1c0599c0f2fed0b760829c6e8c45b2"
+		},
+		{
+			"ImportPath": "golang.org/x/net/context/ctxhttp",
+			"Rev": "e1de94d26cbe867d626efbae672984270261c555"
+		},
+		{
+			"ImportPath": "golang.org/x/oauth2",
+			"Rev": "5d25da1a8d43b66f2898c444f899c7bcfd6a407e"
+		},
+		{
+			"ImportPath": "golang.org/x/oauth2/google",
+			"Rev": "5d25da1a8d43b66f2898c444f899c7bcfd6a407e"
+		},
+		{
+			"ImportPath": "golang.org/x/oauth2/internal",
+			"Rev": "5d25da1a8d43b66f2898c444f899c7bcfd6a407e"
+		},
+		{
+			"ImportPath": "golang.org/x/oauth2/jws",
+			"Rev": "5d25da1a8d43b66f2898c444f899c7bcfd6a407e"
+		},
+		{
+			"ImportPath": "golang.org/x/oauth2/jwt",
+			"Rev": "5d25da1a8d43b66f2898c444f899c7bcfd6a407e"
+		}
+	]
+}

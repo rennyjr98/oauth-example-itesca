@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oauth 2.0 | Admin page</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container pt-5">
+      <h3 class="mb-4">User's List</h3>
+      <table class="table">
+        <tr>
+          <td>Id</td>
+          <td>Email</td>
+          <td>Email</td>
+          <td>Action</td>
+        </tr>
+        {{ range $user := .Accounts }}
+        <tr>
+          <td>{{ $user.Id }}</td>
+          <td>{{ $user.Email }}</td>
+          <td><img src="{{ $user.Picture }}" alt="profile" width="30px" /></td>
+          <td>
+            <a href="/profile?id={{ $user.Id }}" class="btn btn-success">See</a>
+            <a href="/tokens?id={{ $user.Id }}" class="btn btn-primary"
+              >Download</a
+            >
+          </td>
+        </tr>
+        {{
+          end
+        }}
+      </table>
+    </div>
+  </body>
+</html>
